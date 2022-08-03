@@ -1,11 +1,8 @@
 #include <iostream>
-#include "include/GameObject.h"
+#include "include/GameManager.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
-
-
-
+    RecklessDriver::GameManager::GetInstance().NewGame();
     return 0;
 }

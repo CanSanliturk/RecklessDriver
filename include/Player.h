@@ -18,10 +18,7 @@ namespace RecklessDriver {
         void Brake() { m_pVehicle->Down(); }
         void SteerRight() { m_pVehicle->Right(); }
         void SteerLeft() { m_pVehicle->Left(); }
-        void ApplyDamage(int damage, int cash) { 
-            m_health -= damage - m_pVehicle->GetStrength();
-
-        }
+        void ApplyDamage(int damage, int cash);
     };
 }
 

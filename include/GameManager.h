@@ -5,10 +5,10 @@ namespace RecklessDriver {
     class GameManager
     {
         int m_cash;
+        void Drive();
+        GameManager();
 
     public:
-
-        GameManager();
 
         ~GameManager();
 
@@ -21,8 +21,11 @@ namespace RecklessDriver {
         }
         
         void NewGame();
-
         void EndGame();
+        static GameManager& GetInstance() {
+            static GameManager instance;
+            return instance;
+        }
     };
 
 }

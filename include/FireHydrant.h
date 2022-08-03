@@ -4,10 +4,11 @@
 namespace RecklessDriver {
 
     class FireHydrant :
-        public GameObject
+        public SideObject
     {
     public:
         FireHydrant();
+        FireHydrant(int damage, int cash);
         ~FireHydrant();
         void OnCollision(const GameObject& other);
     };

@@ -8,6 +8,7 @@ namespace RecklessDriver {
         int cash;
 
     public:
+        TrafficCar();
         TrafficCar(int _damage, int _cash);
         ~TrafficCar();
         int GetDamage() const { return damage; }
